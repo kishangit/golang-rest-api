@@ -1,0 +1,9 @@
+services:
+  backend:
+    build: ./
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
